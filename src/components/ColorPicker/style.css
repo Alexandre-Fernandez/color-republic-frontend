@@ -1,0 +1,39 @@
+.color-picker {
+	--color-picker-size: 20rem;
+	display: flex;
+	width: fit-content;
+}
+.color-picker .react-colorful {
+	width: var(--color-picker-size);
+	height:  var(--color-picker-size);
+}
+.color-picker .react-colorful__saturation {
+	border-radius: 0;
+}
+.color-picker .react-colorful__hue {
+	height: calc(var(--color-picker-size) * 0.1);
+	border-radius: 0;
+}
+
+.color-buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.color-buttons > button {
+	--selected-size: calc(var(--color-picker-size) / 5.5);
+	height: var(--selected-size);
+	width: var(--selected-size);
+	margin-left: 1.7rem;
+	margin-bottom: calc(var(--color-picker-size) - calc(var(--selected-size) * 5));
+	font-size: calc(var(--selected-size) / 2.3);
+}
+
+.color-button {
+	outline: none;
+	border: none;
+	text-shadow: 0 0 1px var(--clr-black-alpha);
+}
+.color-button:active {
+	transform: scale(0.95);
+}

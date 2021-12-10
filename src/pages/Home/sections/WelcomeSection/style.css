@@ -1,0 +1,34 @@
+.welcome {
+	text-align: center;
+}
+
+.welcome h2 {
+	font-family: "Poppins";
+	font-size: 4rem;
+	font-weight: 700;
+}
+
+.welcome h2 span {
+	display: block;
+	font-weight: 300;
+	font-size: 1.1em;
+}
+
+
+@media (min-width: 768px) {
+	.welcome h2 {
+		font-size: 4.5rem;
+	}
+	.welcome h2 span {
+		display: inline;
+	}
+}
+
+
+
+
+@media (min-width: 1280px) {
+	.welcome h2 {
+		font-size: 5rem;
+	}
+}

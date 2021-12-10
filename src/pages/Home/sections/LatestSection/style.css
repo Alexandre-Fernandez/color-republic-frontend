@@ -1,0 +1,121 @@
+.latest {
+	height: 100vh;
+	position: relative;
+	z-index: 0;
+	font-family: "Poppins";
+}
+.latest .background {
+	--sub-width: 45%;
+	--sub-height: 70%;
+
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.latest .background .left {
+	align-self: flex-start;
+	background-color: #181998;
+	width: var(--sub-width);
+	height: var(--sub-height);
+}
+.latest .background .right {
+	align-self: flex-end;
+	background-color: #FFCE3E;
+	width: var(--sub-width);
+	height: var(--sub-height);
+}
+
+
+.latest .latest-text {
+	--child-height: 9rem;
+
+	z-index: 3;
+	position: absolute;
+	top: calc(50% - calc(var(--child-height) * 0.5));
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.latest .latest-text h3 {
+	font-size: 3.5rem;
+	height: var(--child-height);
+	background-color: white;
+	padding: 1rem calc(5rem + 2vw);
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+
+
+
+.latest .latest-items {
+	--child-height: 45%;
+	--child-width: calc(22rem + 15vw);
+
+	z-index: 2;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.latest .latest-items article a {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.latest .latest-items article a h4 {
+	margin: 0;
+}
+.latest .latest-items .men {
+	align-self: flex-end;
+	height: var(--child-height);
+	width: var(--child-width);
+	margin-right: 5%;
+	font-size: calc(5rem + 4vw);
+}
+.latest .latest-items .men a {
+	align-items: flex-start;
+	color: white;
+}
+.latest .latest-items .women {
+	align-self: flex-start;
+	height: var(--child-height);
+	width: var(--child-width);
+	margin-left: 5%;
+	font-size: calc(5rem + 4vw);
+	align-items: flex-start;
+}
+.latest .latest-items .women a {
+	align-items: flex-end;
+	color: white;
+}
+
+
+@media (min-width: 768px) {
+	.latest .latest-items {
+		--child-height: 75%;
+		--child-width: calc(27rem + 15vw);
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		column-gap: 2.5%;
+	}
+	.latest .latest-items .men {
+		margin: 0 0 2.5% 2.5%;
+	}
+	.latest .latest-items .women {
+		margin: 2.5% 2.5% 0 0;
+	}
+}

@@ -1,0 +1,83 @@
+.product {
+	margin: auto;
+	width: 95%;
+	font-family: "Roboto";
+}
+.product img {
+	width: 100%;
+	height: 53vh;
+	object-fit: cover;
+}
+.product .info {
+	height: 7vh;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 3%;
+}
+.product .info p {
+	color: black;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+.product .info p:first-child {
+	font-size: 1.7rem;
+	flex-grow: 1;
+}
+.product .info p:last-child {
+	font-size: 1.9rem;
+	white-space: nowrap;
+	margin-left: 1rem;
+}
+.product .info p span {
+	color: var(--clr-grey);
+	text-decoration: line-through;
+	padding-right: 0.7rem;
+}
+
+
+
+
+
+
+.custom-select {
+	--b-padding: 1.1rem;
+	--ltr-padding: calc(var(--b-padding) * 1.1);
+	--left-margin: calc(var(--fixed-header-margin) - var(--ltr-padding));
+	position: fixed;
+	bottom: calc(calc(calc(var(--fixed-header-margin) + var(--header-icon-size)) + 3rem) - var(--b-padding));
+	left: var(--left-margin);
+	padding: var(--ltr-padding) var(--ltr-padding) var(--b-padding) var(--ltr-padding);
+	border-radius: 10rem;
+	font-family: "Roboto";
+	font-size: 1.55rem;
+}
+.custom-select.opened {
+	background: white;
+	width: calc(100vw - calc(var(--left-margin) * 2));
+}
+.custom-select .main-button {
+	background: none;
+	border: none;
+	outline: none;
+	font-size: var(--header-icon-size);
+	opacity: var(--header-opacity);
+}
+.custom-select ul {
+	justify-content: space-around;
+}
+.custom-select .drop-down-button {
+	color: black;
+	font-weight: 500;
+	padding: 0.4rem 0.6rem;
+	background: none;
+	border: none;
+	text-shadow: none;
+	white-space: nowrap;
+}
+.custom-select .drop-down-button.selected {
+	color: white;
+	background-color:#181998;
+}
+

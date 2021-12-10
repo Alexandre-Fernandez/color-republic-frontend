@@ -1,0 +1,16 @@
+.accordion-tab {
+	display: flex;
+	align-items: center;
+}
+.accordion-tab .accordion-tab-name {
+	flex-grow: 1;
+}
+.accordion-tab button{
+	color: black;
+	background: none;
+	border: none;
+	text-shadow: none;
+}
+.hide-accordion-content {
+	display: none;
+}

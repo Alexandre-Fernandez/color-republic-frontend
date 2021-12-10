@@ -1,0 +1,23 @@
+.cart-link {
+	position: relative;
+}
+.cart-size {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	background: rgba(188, 12, 30, calc(var(--header-opacity) * 1.2));
+	border-radius: 10rem;
+	font-size: 1.7rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	top: -62.5%;
+	right: -27.5%;
+	text-shadow: none;
+	color: white;
+	font-family: "Poppins";
+	font-weight: 500;
+}
+.hide-cart-size {
+	display: none;
+}

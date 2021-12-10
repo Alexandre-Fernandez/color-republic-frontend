@@ -1,0 +1,37 @@
+.product-peek {
+	margin: auto;
+	width: 95%;
+	font-family: "Roboto";
+}
+.product-peek img {
+	width: 100%;
+	height: 53vh;
+	object-fit: cover;
+}
+.product-peek .product-base-info {
+	height: 7vh;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 3%;
+}
+.product-peek .product-base-info p {
+	color: black;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+.product-peek .product-base-info p:first-child {
+	font-size: 1.7rem;
+	flex-grow: 1;
+}
+.product-peek .product-base-info p:last-child {
+	font-size: 1.9rem;
+	white-space: nowrap;
+	margin-left: 1rem;
+}
+.product-peek .product-base-info p .original-price {
+	color: var(--clr-grey);
+	text-decoration: line-through;
+	padding-right: 0.7rem;
+}

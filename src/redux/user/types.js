@@ -1,0 +1,7 @@
+const types = {
+	INIT_USER: "INIT_USER",
+	LOG_USER_IN: "LOG_USER_IN",
+	LOG_USER_OUT: "LOG_USER_OUT",
+	REFRESH_USER_TOKENS: "REFRESH_USER_TOKENS"
+}
+export default types

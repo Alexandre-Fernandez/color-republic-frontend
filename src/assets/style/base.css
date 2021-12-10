@@ -1,0 +1,41 @@
+@import "./normalize.css";
+
+*, ::before, ::after {
+	--webkit-box-sizing: border-box;
+	--moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.8rem;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+button {
+	outline: none;
+	cursor: pointer;
+}
+
+
+/* 
+	Classes
+*/
+
+
+.hide {
+    display: none;
+}

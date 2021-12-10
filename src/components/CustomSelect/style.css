@@ -1,0 +1,25 @@
+.custom-select {
+	width: fit-content;
+	display: flex;
+}
+.custom-select .drop-down {
+	flex-grow: 1;
+	display: none;
+	align-items: center;
+}
+.custom-select .drop-down p {
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+.custom-select .drop-down > ul {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.custom-select.opened .drop-down {
+	display: flex;
+}

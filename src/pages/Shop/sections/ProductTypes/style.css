@@ -1,0 +1,66 @@
+.product-types {
+	height: 45vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.product-types .type-btn-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.product-types .clip-path-button {
+	width: 17vh;
+	margin: 1vh;
+}
+
+
+.clip-path-button {
+	position: relative;
+	width: 20vw;
+	padding: 0;
+	outline: none;
+	border: none;
+	background: #181998;
+}
+.clip-path-button.active {
+	background: white;
+}
+.clip-path-button:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%
+}
+.clip-path-button .content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-width: 0;
+}
+.clip-path-button.active .content {
+	border-color: #181998;
+}
+.clip-path-button .clip-path {
+	height: 0;
+	width: 57%;
+	padding-bottom: 57%;
+	background: white;
+}
+.clip-path-button.active .clip-path {
+	background: #181998;
+}
+.clip-path-button .text {
+	color: white;
+	margin: 0.3rem 0 0 0;
+	font-family: "Poppins";
+	font-weight: 500;
+	text-shadow: none;
+}
+.clip-path-button.active .text {
+	color: #181998;
+}

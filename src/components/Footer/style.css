@@ -1,0 +1,27 @@
+footer {
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	margin-top: 12rem;
+}
+
+footer .footer-content {
+	flex-grow: 1;
+	background-color: #181998;
+	color: #FFCE3E;
+}
+
+
+footer .footer-bar {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 5%;
+}
+footer .footer-bar .language {
+	font-size: 1.6rem;
+}
+footer .footer-bar .social {
+	display: flex;
+	column-gap: 2rem;
+}
+
